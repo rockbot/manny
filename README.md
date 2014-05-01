@@ -3,7 +3,7 @@ Manny the Manipulator
 
 This is Manny. 
 
-![Manny the Manipulator](../manny.png)
+![Manny the Manipulator](manny.png)
 
 He's been to [JSConf 2013 in Amelia Island, Florida](https://speakerdeck.com/rockbot/ai-dot-js-robots-with-brains) and [Web Directions Code 2014 in Melbourne, Australia](https://speakerdeck.com/rockbot/you-can-do-what-with-math-now).
 
