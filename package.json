@@ -7,10 +7,10 @@
   "dependencies": {
     "express": "3.3.4",
     "jade": "^1.11.0",
+    "johnny-five": "^0.8.91",
+    "socket.io": "^1.3.6",
     "stylus": "^0.52.0",
     "underscore": "^1.8.3",
-    "johnny-five": "^0.8.85",
-    "socket.io": "^1.3.6",
     "vektor": "^0.3.0"
   },
   "description": "Manny the Manipulator ===",

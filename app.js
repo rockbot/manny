@@ -4,14 +4,13 @@
  */
 
 var express = require('express'),
-    http = require('http'),
-    path = require('path');
+  http = require('http'),
+  path = require('path');
 
 var app = express(),
-    server = http.createServer(app),
-    manipulator = require('./manipulator')(server);
+  server = http.createServer(app);
 
-app.configure(function(){
+app.configure(function() {
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -24,11 +23,12 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
-app.configure('development', function(){
+app.configure('development', function() {
   app.use(express.errorHandler());
 });
 
-app.get('/', function(req, res){
+app.get('/', function(req, res) {
+  require('./manipulator')(server);
   res.render('sliders');
 });
 
